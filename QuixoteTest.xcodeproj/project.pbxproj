@@ -1,0 +1,857 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		180EE89527FE964B008B90FD /* CustomNoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180EE89327FE964B008B90FD /* CustomNoteTableViewCell.swift */; };
+		180EE89627FE964B008B90FD /* CustomNoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180EE89427FE964B008B90FD /* CustomNoteTableViewCell.xib */; };
+		180EE89827FF45EE008B90FD /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180EE89727FF45EE008B90FD /* Util.swift */; };
+		180EE89C27FF476C008B90FD /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180EE89B27FF476C008B90FD /* DatabaseManager.swift */; };
+		180EE8A227FF62F5008B90FD /* UIImageViewExtenstion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180EE8A127FF62F5008B90FD /* UIImageViewExtenstion.swift */; };
+		1829A83227FDA678002B543D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829A83127FDA678002B543D /* AppDelegate.swift */; };
+		1829A83427FDA678002B543D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829A83327FDA678002B543D /* SceneDelegate.swift */; };
+		1829A83927FDA678002B543D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1829A83727FDA678002B543D /* Main.storyboard */; };
+		1829A83B27FDA67A002B543D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1829A83A27FDA67A002B543D /* Assets.xcassets */; };
+		1829A83E27FDA67A002B543D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1829A83C27FDA67A002B543D /* LaunchScreen.storyboard */; };
+		1829A84927FDA67B002B543D /* QuixoteTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829A84827FDA67B002B543D /* QuixoteTestTests.swift */; };
+		1829A85327FDA67B002B543D /* QuixoteTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829A85227FDA67B002B543D /* QuixoteTestUITests.swift */; };
+		1829A85527FDA67B002B543D /* QuixoteTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829A85427FDA67B002B543D /* QuixoteTestUITestsLaunchTests.swift */; };
+		1829A86227FDA6D0002B543D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829A86127FDA6D0002B543D /* LoginViewController.swift */; };
+		1829A86427FDA724002B543D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829A86327FDA724002B543D /* SignUpViewController.swift */; };
+		1829A86827FDB8EB002B543D /* DetailNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829A86727FDB8EB002B543D /* DetailNoteViewController.swift */; };
+		1829A86A27FDB900002B543D /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829A86927FDB900002B543D /* AddNoteViewController.swift */; };
+		1829A86C27FDBD29002B543D /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829A86B27FDBD29002B543D /* NotesTableViewController.swift */; };
+		1829A86E27FDCDD2002B543D /* LoginData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829A86D27FDCDD2002B543D /* LoginData.swift */; };
+		1829A87227FE0BBD002B543D /* NotesModelClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829A87127FE0BBD002B543D /* NotesModelClass.swift */; };
+		185669F927FFCFE100A11878 /* Notes.db in Resources */ = {isa = PBXBuildFile; fileRef = 185669F827FFCFE100A11878 /* Notes.db */; };
+		36FB3FC9266D872C4691B1CE /* Pods_QuixoteTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29C628177E3E7BF17B09AD2A /* Pods_QuixoteTestTests.framework */; };
+		407FD45FCBA4D9EC9BF61BBD /* Pods_QuixoteTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4F7A24BBA5CE544FC40914F /* Pods_QuixoteTest.framework */; };
+		FF7150FBEE39E2115CB7BC0E /* Pods_QuixoteTest_QuixoteTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF6FB72A76848A74A438D734 /* Pods_QuixoteTest_QuixoteTestUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1829A84527FDA67B002B543D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1829A82627FDA678002B543D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1829A82D27FDA678002B543D;
+			remoteInfo = QuixoteTest;
+		};
+		1829A84F27FDA67B002B543D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1829A82627FDA678002B543D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1829A82D27FDA678002B543D;
+			remoteInfo = QuixoteTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		180EE89327FE964B008B90FD /* CustomNoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNoteTableViewCell.swift; sourceTree = "<group>"; };
+		180EE89427FE964B008B90FD /* CustomNoteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomNoteTableViewCell.xib; sourceTree = "<group>"; };
+		180EE89727FF45EE008B90FD /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		180EE89B27FF476C008B90FD /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		180EE8A127FF62F5008B90FD /* UIImageViewExtenstion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtenstion.swift; sourceTree = "<group>"; };
+		1829A82E27FDA678002B543D /* QuixoteTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuixoteTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1829A83127FDA678002B543D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1829A83327FDA678002B543D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1829A83827FDA678002B543D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1829A83A27FDA67A002B543D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1829A83D27FDA67A002B543D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1829A83F27FDA67A002B543D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1829A84427FDA67B002B543D /* QuixoteTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuixoteTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1829A84827FDA67B002B543D /* QuixoteTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuixoteTestTests.swift; sourceTree = "<group>"; };
+		1829A84E27FDA67B002B543D /* QuixoteTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuixoteTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1829A85227FDA67B002B543D /* QuixoteTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuixoteTestUITests.swift; sourceTree = "<group>"; };
+		1829A85427FDA67B002B543D /* QuixoteTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuixoteTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1829A86127FDA6D0002B543D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1829A86327FDA724002B543D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		1829A86727FDB8EB002B543D /* DetailNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNoteViewController.swift; sourceTree = "<group>"; };
+		1829A86927FDB900002B543D /* AddNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
+		1829A86B27FDBD29002B543D /* NotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
+		1829A86D27FDCDD2002B543D /* LoginData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginData.swift; sourceTree = "<group>"; };
+		1829A87127FE0BBD002B543D /* NotesModelClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesModelClass.swift; sourceTree = "<group>"; };
+		185669F827FFCFE100A11878 /* Notes.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Notes.db; sourceTree = "<group>"; };
+		29C628177E3E7BF17B09AD2A /* Pods_QuixoteTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuixoteTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39C2865DD1D5256148C9681D /* Pods-QuixoteTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuixoteTestTests.release.xcconfig"; path = "Target Support Files/Pods-QuixoteTestTests/Pods-QuixoteTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		6406C6BEE9EE3E7952BEE133 /* Pods-QuixoteTest-QuixoteTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuixoteTest-QuixoteTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-QuixoteTest-QuixoteTestUITests/Pods-QuixoteTest-QuixoteTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7509EE30C66D2189617947D6 /* Pods-QuixoteTest-QuixoteTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuixoteTest-QuixoteTestUITests.release.xcconfig"; path = "Target Support Files/Pods-QuixoteTest-QuixoteTestUITests/Pods-QuixoteTest-QuixoteTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B4F7A24BBA5CE544FC40914F /* Pods_QuixoteTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuixoteTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF6FB72A76848A74A438D734 /* Pods_QuixoteTest_QuixoteTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuixoteTest_QuixoteTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4063A9404F4948A0E31F739 /* Pods-QuixoteTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuixoteTest.release.xcconfig"; path = "Target Support Files/Pods-QuixoteTest/Pods-QuixoteTest.release.xcconfig"; sourceTree = "<group>"; };
+		E8774771558D738C79374EC4 /* Pods-QuixoteTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuixoteTest.debug.xcconfig"; path = "Target Support Files/Pods-QuixoteTest/Pods-QuixoteTest.debug.xcconfig"; sourceTree = "<group>"; };
+		ED77988E1CCDD7E245688F44 /* Pods-QuixoteTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuixoteTestTests.debug.xcconfig"; path = "Target Support Files/Pods-QuixoteTestTests/Pods-QuixoteTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1829A82B27FDA678002B543D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				407FD45FCBA4D9EC9BF61BBD /* Pods_QuixoteTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1829A84127FDA67B002B543D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36FB3FC9266D872C4691B1CE /* Pods_QuixoteTestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1829A84B27FDA67B002B543D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF7150FBEE39E2115CB7BC0E /* Pods_QuixoteTest_QuixoteTestUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		180EE8A627FF8808008B90FD /* Model Class */ = {
+			isa = PBXGroup;
+			children = (
+				1829A86D27FDCDD2002B543D /* LoginData.swift */,
+				1829A87127FE0BBD002B543D /* NotesModelClass.swift */,
+			);
+			path = "Model Class";
+			sourceTree = "<group>";
+		};
+		180EE8A727FF882A008B90FD /* Login Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1829A86327FDA724002B543D /* SignUpViewController.swift */,
+				1829A86127FDA6D0002B543D /* LoginViewController.swift */,
+			);
+			path = "Login Controller";
+			sourceTree = "<group>";
+		};
+		180EE8A827FF8851008B90FD /* Notes Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1829A86B27FDBD29002B543D /* NotesTableViewController.swift */,
+				1829A86727FDB8EB002B543D /* DetailNoteViewController.swift */,
+				1829A86927FDB900002B543D /* AddNoteViewController.swift */,
+			);
+			path = "Notes Controller";
+			sourceTree = "<group>";
+		};
+		180EE8A927FF887C008B90FD /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				180EE89327FE964B008B90FD /* CustomNoteTableViewCell.swift */,
+				180EE89427FE964B008B90FD /* CustomNoteTableViewCell.xib */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		1829A82527FDA678002B543D = {
+			isa = PBXGroup;
+			children = (
+				1829A83027FDA678002B543D /* QuixoteTest */,
+				1829A84727FDA67B002B543D /* QuixoteTestTests */,
+				1829A85127FDA67B002B543D /* QuixoteTestUITests */,
+				1829A82F27FDA678002B543D /* Products */,
+				A47BEFC4F47BFD5123AB05C7 /* Pods */,
+				7E5FB80B101010BA4981D785 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1829A82F27FDA678002B543D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1829A82E27FDA678002B543D /* QuixoteTest.app */,
+				1829A84427FDA67B002B543D /* QuixoteTestTests.xctest */,
+				1829A84E27FDA67B002B543D /* QuixoteTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1829A83027FDA678002B543D /* QuixoteTest */ = {
+			isa = PBXGroup;
+			children = (
+				185669F827FFCFE100A11878 /* Notes.db */,
+				1829A83127FDA678002B543D /* AppDelegate.swift */,
+				1829A83327FDA678002B543D /* SceneDelegate.swift */,
+				180EE8A627FF8808008B90FD /* Model Class */,
+				180EE8A727FF882A008B90FD /* Login Controller */,
+				180EE8A827FF8851008B90FD /* Notes Controller */,
+				180EE8A927FF887C008B90FD /* Custom Cell */,
+				185669FA27FFE06A00A11878 /* DataBase */,
+				185669FB27FFE08A00A11878 /* ImageExtenstion */,
+				1829A83727FDA678002B543D /* Main.storyboard */,
+				1829A83C27FDA67A002B543D /* LaunchScreen.storyboard */,
+				1829A83A27FDA67A002B543D /* Assets.xcassets */,
+				1829A83F27FDA67A002B543D /* Info.plist */,
+			);
+			path = QuixoteTest;
+			sourceTree = "<group>";
+		};
+		1829A84727FDA67B002B543D /* QuixoteTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				1829A84827FDA67B002B543D /* QuixoteTestTests.swift */,
+			);
+			path = QuixoteTestTests;
+			sourceTree = "<group>";
+		};
+		1829A85127FDA67B002B543D /* QuixoteTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1829A85227FDA67B002B543D /* QuixoteTestUITests.swift */,
+				1829A85427FDA67B002B543D /* QuixoteTestUITestsLaunchTests.swift */,
+			);
+			path = QuixoteTestUITests;
+			sourceTree = "<group>";
+		};
+		185669FA27FFE06A00A11878 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				180EE89727FF45EE008B90FD /* Util.swift */,
+				180EE89B27FF476C008B90FD /* DatabaseManager.swift */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		185669FB27FFE08A00A11878 /* ImageExtenstion */ = {
+			isa = PBXGroup;
+			children = (
+				180EE8A127FF62F5008B90FD /* UIImageViewExtenstion.swift */,
+			);
+			path = ImageExtenstion;
+			sourceTree = "<group>";
+		};
+		7E5FB80B101010BA4981D785 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4F7A24BBA5CE544FC40914F /* Pods_QuixoteTest.framework */,
+				CF6FB72A76848A74A438D734 /* Pods_QuixoteTest_QuixoteTestUITests.framework */,
+				29C628177E3E7BF17B09AD2A /* Pods_QuixoteTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A47BEFC4F47BFD5123AB05C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8774771558D738C79374EC4 /* Pods-QuixoteTest.debug.xcconfig */,
+				E4063A9404F4948A0E31F739 /* Pods-QuixoteTest.release.xcconfig */,
+				6406C6BEE9EE3E7952BEE133 /* Pods-QuixoteTest-QuixoteTestUITests.debug.xcconfig */,
+				7509EE30C66D2189617947D6 /* Pods-QuixoteTest-QuixoteTestUITests.release.xcconfig */,
+				ED77988E1CCDD7E245688F44 /* Pods-QuixoteTestTests.debug.xcconfig */,
+				39C2865DD1D5256148C9681D /* Pods-QuixoteTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1829A82D27FDA678002B543D /* QuixoteTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1829A85827FDA67B002B543D /* Build configuration list for PBXNativeTarget "QuixoteTest" */;
+			buildPhases = (
+				269D1D0F5A25F3360B6ABF37 /* [CP] Check Pods Manifest.lock */,
+				1829A82A27FDA678002B543D /* Sources */,
+				1829A82B27FDA678002B543D /* Frameworks */,
+				1829A82C27FDA678002B543D /* Resources */,
+				BA8D79E5915D28CA528E50B0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuixoteTest;
+			packageProductDependencies = (
+			);
+			productName = QuixoteTest;
+			productReference = 1829A82E27FDA678002B543D /* QuixoteTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1829A84327FDA67B002B543D /* QuixoteTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1829A85B27FDA67B002B543D /* Build configuration list for PBXNativeTarget "QuixoteTestTests" */;
+			buildPhases = (
+				18312F06B478C6141793AD3D /* [CP] Check Pods Manifest.lock */,
+				1829A84027FDA67B002B543D /* Sources */,
+				1829A84127FDA67B002B543D /* Frameworks */,
+				1829A84227FDA67B002B543D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1829A84627FDA67B002B543D /* PBXTargetDependency */,
+			);
+			name = QuixoteTestTests;
+			productName = QuixoteTestTests;
+			productReference = 1829A84427FDA67B002B543D /* QuixoteTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1829A84D27FDA67B002B543D /* QuixoteTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1829A85E27FDA67B002B543D /* Build configuration list for PBXNativeTarget "QuixoteTestUITests" */;
+			buildPhases = (
+				11BA2339A2E23B19206931A3 /* [CP] Check Pods Manifest.lock */,
+				1829A84A27FDA67B002B543D /* Sources */,
+				1829A84B27FDA67B002B543D /* Frameworks */,
+				1829A84C27FDA67B002B543D /* Resources */,
+				29CBF27DA9805B12AADEAFCD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1829A85027FDA67B002B543D /* PBXTargetDependency */,
+			);
+			name = QuixoteTestUITests;
+			productName = QuixoteTestUITests;
+			productReference = 1829A84E27FDA67B002B543D /* QuixoteTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1829A82627FDA678002B543D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					1829A82D27FDA678002B543D = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					1829A84327FDA67B002B543D = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 1829A82D27FDA678002B543D;
+					};
+					1829A84D27FDA67B002B543D = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 1829A82D27FDA678002B543D;
+					};
+				};
+			};
+			buildConfigurationList = 1829A82927FDA678002B543D /* Build configuration list for PBXProject "QuixoteTest" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1829A82527FDA678002B543D;
+			packageReferences = (
+			);
+			productRefGroup = 1829A82F27FDA678002B543D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1829A82D27FDA678002B543D /* QuixoteTest */,
+				1829A84327FDA67B002B543D /* QuixoteTestTests */,
+				1829A84D27FDA67B002B543D /* QuixoteTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1829A82C27FDA678002B543D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180EE89627FE964B008B90FD /* CustomNoteTableViewCell.xib in Resources */,
+				1829A83E27FDA67A002B543D /* LaunchScreen.storyboard in Resources */,
+				1829A83B27FDA67A002B543D /* Assets.xcassets in Resources */,
+				185669F927FFCFE100A11878 /* Notes.db in Resources */,
+				1829A83927FDA678002B543D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1829A84227FDA67B002B543D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1829A84C27FDA67B002B543D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11BA2339A2E23B19206931A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuixoteTest-QuixoteTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		18312F06B478C6141793AD3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuixoteTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		269D1D0F5A25F3360B6ABF37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QuixoteTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29CBF27DA9805B12AADEAFCD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuixoteTest-QuixoteTestUITests/Pods-QuixoteTest-QuixoteTestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuixoteTest-QuixoteTestUITests/Pods-QuixoteTest-QuixoteTestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuixoteTest-QuixoteTestUITests/Pods-QuixoteTest-QuixoteTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA8D79E5915D28CA528E50B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuixoteTest/Pods-QuixoteTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QuixoteTest/Pods-QuixoteTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QuixoteTest/Pods-QuixoteTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1829A82A27FDA678002B543D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180EE89827FF45EE008B90FD /* Util.swift in Sources */,
+				1829A86A27FDB900002B543D /* AddNoteViewController.swift in Sources */,
+				1829A86227FDA6D0002B543D /* LoginViewController.swift in Sources */,
+				180EE89527FE964B008B90FD /* CustomNoteTableViewCell.swift in Sources */,
+				1829A83227FDA678002B543D /* AppDelegate.swift in Sources */,
+				1829A87227FE0BBD002B543D /* NotesModelClass.swift in Sources */,
+				1829A86427FDA724002B543D /* SignUpViewController.swift in Sources */,
+				1829A83427FDA678002B543D /* SceneDelegate.swift in Sources */,
+				180EE8A227FF62F5008B90FD /* UIImageViewExtenstion.swift in Sources */,
+				180EE89C27FF476C008B90FD /* DatabaseManager.swift in Sources */,
+				1829A86E27FDCDD2002B543D /* LoginData.swift in Sources */,
+				1829A86827FDB8EB002B543D /* DetailNoteViewController.swift in Sources */,
+				1829A86C27FDBD29002B543D /* NotesTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1829A84027FDA67B002B543D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1829A84927FDA67B002B543D /* QuixoteTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1829A84A27FDA67B002B543D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1829A85527FDA67B002B543D /* QuixoteTestUITestsLaunchTests.swift in Sources */,
+				1829A85327FDA67B002B543D /* QuixoteTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1829A84627FDA67B002B543D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1829A82D27FDA678002B543D /* QuixoteTest */;
+			targetProxy = 1829A84527FDA67B002B543D /* PBXContainerItemProxy */;
+		};
+		1829A85027FDA67B002B543D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1829A82D27FDA678002B543D /* QuixoteTest */;
+			targetProxy = 1829A84F27FDA67B002B543D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1829A83727FDA678002B543D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1829A83827FDA678002B543D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1829A83C27FDA67A002B543D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1829A83D27FDA67A002B543D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1829A85627FDA67B002B543D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1829A85727FDA67B002B543D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1829A85927FDA67B002B543D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8774771558D738C79374EC4 /* Pods-QuixoteTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M234VXTM68;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QuixoteTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = viewcontroller.QuixoteTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1829A85A27FDA67B002B543D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4063A9404F4948A0E31F739 /* Pods-QuixoteTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M234VXTM68;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QuixoteTest/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = viewcontroller.QuixoteTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1829A85C27FDA67B002B543D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED77988E1CCDD7E245688F44 /* Pods-QuixoteTestTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = viewcontroller.QuixoteTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuixoteTest.app/QuixoteTest";
+			};
+			name = Debug;
+		};
+		1829A85D27FDA67B002B543D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39C2865DD1D5256148C9681D /* Pods-QuixoteTestTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = viewcontroller.QuixoteTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QuixoteTest.app/QuixoteTest";
+			};
+			name = Release;
+		};
+		1829A85F27FDA67B002B543D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6406C6BEE9EE3E7952BEE133 /* Pods-QuixoteTest-QuixoteTestUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = viewcontroller.QuixoteTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QuixoteTest;
+			};
+			name = Debug;
+		};
+		1829A86027FDA67B002B543D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7509EE30C66D2189617947D6 /* Pods-QuixoteTest-QuixoteTestUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = viewcontroller.QuixoteTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QuixoteTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1829A82927FDA678002B543D /* Build configuration list for PBXProject "QuixoteTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1829A85627FDA67B002B543D /* Debug */,
+				1829A85727FDA67B002B543D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1829A85827FDA67B002B543D /* Build configuration list for PBXNativeTarget "QuixoteTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1829A85927FDA67B002B543D /* Debug */,
+				1829A85A27FDA67B002B543D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1829A85B27FDA67B002B543D /* Build configuration list for PBXNativeTarget "QuixoteTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1829A85C27FDA67B002B543D /* Debug */,
+				1829A85D27FDA67B002B543D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1829A85E27FDA67B002B543D /* Build configuration list for PBXNativeTarget "QuixoteTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1829A85F27FDA67B002B543D /* Debug */,
+				1829A86027FDA67B002B543D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1829A82627FDA678002B543D /* Project object */;
+}
